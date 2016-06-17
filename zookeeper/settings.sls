@@ -61,6 +61,9 @@
 {%- set zookeepers_ids       = zookeepers_host_dict.keys() %}
 {%- set zookeepers_hosts     = zookeepers_host_dict.values() %}
 
+{%- set zookeepers_ids       = ['zookeeper01.local','zookeeper02.local','zookeeper03.local'] %}
+{%- set zookeepers_hosts     = ['zookeeper01.local','zookeeper02.local','zookeeper03.local'] %}
+
 {%- set zookeeper_host_num   = zookeepers_ids | length() %}
 
 {%- if zookeeper_host_num == 0
